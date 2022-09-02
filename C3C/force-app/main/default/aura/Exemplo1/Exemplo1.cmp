@@ -1,0 +1,17 @@
+<aura:component implements="flexipage:availableForAllPageTypes,force:appHostable" access="global">
+    <aura:attribute name="Pão" type="String"/>
+    <aura:attribute name="Frios" type="String"/>
+    <aura:attribute name="Bolacha" type="String"/>
+    <aura:attribute name="Bolo" type="String"/>
+
+    <lightning:input type="text" value="Mortadela" label="Frios:" required="true"/>
+    <lightning:input type="text" value="Soda" label="Bolacha:" required="true"/>
+    <lightning:input type="text" value="Bolo de Rolo" label="Bolo:" required="true"/>
+
+    <lightning:select name="Pão" label="Qual o tipo do pão?" required="true">
+        <option value="">choose one...</option>
+        <option value="1">Frances</option>
+        <option value="2">Bolachao</option>
+        <option value="3">Seda</option>
+    </lightning:select>
+</aura:component>

@@ -1,0 +1,6 @@
+<aura:component implements="flexipage:availableForAllPageTypes,force:appHostable" access="global" controller="Exemplo2Apex">
+    <aura:attribute type="String" name="apelido"/>
+
+    <lightning:input type="text" label="Qual seu apelido?" value="{!v.apelido}" />
+    <lightning:button variant="brand" label="Enviar Apelido" title="Enviar" onclick="{! c.buscarApelido }" />
+</aura:component>
